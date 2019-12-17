@@ -20,7 +20,7 @@
 			modal.style.display = "none";
 		}
 		gitbtn.onclick = function() {
-			modal.style.display = "none";
+			onclick=window.open('https://github.com/MJ0123/Web-Portfolio', '_blank');
 		}
 
 		/* modal02 */
@@ -40,7 +40,7 @@
 			modal2.style.display = "none";
 		}
 		gitbtn2.onclick = function() {
-			modal2.style.display = "none";
+			onclick=window.open('https://github.com/MJ0123/AI-Counter', '_blank');
 		}
 
 		/* modal03 */
@@ -60,7 +60,7 @@
 			modal3.style.display = "none";
 		}
 		gitbtn3.onclick = function() {
-			modal3.style.display = "none";
+			onclick=window.open('https://github.com/MJ0123/Smart-DoorLock', '_blank');
 		}
 
 		/* modal04 */
@@ -80,5 +80,5 @@
 			modal4.style.display = "none";
 		}
 		gitbtn4.onclick = function() {
-			modal4.style.display = "none";
+			onclick=window.open('https://github.com/MJ0123/Smart-Window', '_blank');
 		}
