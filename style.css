@@ -1,0 +1,639 @@
+* {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-family: 'arial', sans-serif;
+	text-decoration: none;
+}
+
+/* ===================================
+				메뉴
+===================================== */
+.menu_box {
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	z-index: 1;
+}
+
+.menu_inner {
+	height: 80px;
+	margin: 0 auto;
+}
+
+/* ===================================
+		스크롤 시 메뉴 흰색배경
+===================================== */
+.fixed {
+	background: rgba(255, 255, 255, 1);
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+}
+
+/* ===================================
+				로고
+===================================== */
+.logo a {
+	float: left;
+	font-size: 30px;
+	font-weight: bold;
+	margin-left: 10%;
+	line-height: 80px;
+	color: #000;
+}
+
+/* ===================================
+				메뉴 섹션
+===================================== */
+.menu_box .menu_inner>ul {
+	float: right;
+	padding: 0 35px 0 0;
+	margin-right: 10%;
+}
+
+/* ===================================
+				메뉴 세부
+===================================== */
+.menu_box .menu_inner li {
+	float: left;
+	text-align: center;
+	margin-left: 35px;
+}
+
+.menu_box .menu_inner li a {
+	text-decoration: none;
+	color: #000;
+	line-height: 80px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.menu_box .menu_inner li a:hover {
+	border-bottom: 2px solid #F33;
+	color: #F33;
+}
+
+.menu_box .menu_inner li:nth-child(2) a:hover {
+	border-bottom: 2px solid #F33;
+	color: #F33;
+}
+
+.menu_box .menu_inner li:nth-child(3) a:hover {
+	border-bottom: 2px solid #F33;
+	color: #F33;
+}
+
+.menu_box .menu_inner li:nth-child(4) a:hover {
+	border-bottom: 2px solid #F33;
+	color: #F33;
+}
+
+.menu_box .menu_inner li:nth-child(5) a:hover {
+	border-bottom: 2px solid #F33;
+	color: #F33;
+}
+
+/* ===================================
+				기본 틀 
+===================================== */
+.container {
+	height: 750px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.show-on-scroll { visibility: hidden; }
+.show-on-scroll.shown { visibility: visible; }
+
+/* ===================================
+			section01(Home) 
+===================================== */
+#section01 {
+	width: 100%;
+	height: 855px;
+	position: relative;
+	/*background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%,
+		rgba(92, 77, 66, 0.8) 100%), url("../images/background.png");*/
+	min-height: 100%;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#videobcg { 
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     min-width: 100%;
+     min-height: 100%;
+     width: auto;
+     height: auto;
+     z-index: -1000;
+     overflow: hidden;
+}
+
+/* ===================================
+			home 타이핑 속성 
+===================================== */
+#section01 h1 {
+	color: white;
+	top: 50%;
+	height: 100px;
+	width: 70%;
+	margin-left: 0%;
+	margin-top: 0%;
+	font-size: 70px;
+	text-align: center;
+	min-width: 1050px;
+	font-weight: bold;
+}
+
+/* ===================================
+			home 타이핑 애니메이션 
+===================================== */
+.typing {
+	display: inline-block;
+	animation-name: cursor;
+	animation-duration: 0.3s;
+	animation-iteration-count: infinite;
+	
+	@keyframes cursor{ 
+      0%{border-right: 1px solid #fff} 
+      50%{border-right: 1px solid #000} 
+      100%{border-right: 1px solid #fff} 
+	}
+}
+
+/* ===================================
+			home 버튼 속성 
+===================================== */
+.home_btn {
+	display: block;
+	width: 200px;
+	height: 60px;
+	background-color: #db8213;
+	line-height: 57px;
+	border: 2px #ffffff00 solid;
+	margin: 15px auto;
+	text-align: center;
+	font-size: 27px;
+	border-radius: 50px;
+	cursor: pointer;
+	color: #fff;
+	transition: all .9s;
+	position: absolute;
+	margin-left: 29%;
+	margin-top: 5%;
+}
+
+.home_btn:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.hover4:hover {
+	box-shadow: 200px 0 0 0 rgba(0, 0, 0, 0.25) inset, -200px 0 0 0
+		rgba(0, 0, 0, 0.25) inset;
+}
+
+.animated.Btn {animation: btn .75s ease both;}
+
+	@-webkit-keyframes btn{
+		from {
+    	-webkit-transform: translate3d(0, 100%, 0);
+    	transform: translate3d(0, 100%, 0);
+    	visibility: hidden;
+  		}
+
+  		to {
+    		-webkit-transform: translate3d(0, 0, 0);
+    		transform: translate3d(0, 0, 0);
+    		visibility: visible;
+  		}
+	}
+
+/* ===================================
+			section02(About) 
+===================================== */
+#section02 {
+	width: 100%;
+	height: 850px;
+	background: rgba(255, 255, 255, 0.8);
+}
+
+.title {
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	margin-top: 25%;
+	vertical-align: middle;
+}
+
+/* ===================================
+				태그 속성
+===================================== */
+#section02 h1 {
+	font-size: 5.5rem;
+	margin-top: -15%;
+	margin-left: 0%;
+	height: 40px;
+	color: #777373;
+}
+
+.about {
+	
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+}
+
+#section02 hr {
+	max-width: 7.25rem;
+	border-width: .5rem;
+	border-color: #f4623a;
+	margin-top: 3%;
+	margin-left: 47%;
+}
+
+#section02 h3 {
+	position: relative;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    padding-left: 25px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#section02 h3:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 20px;
+    height: 10px;
+    background: #70dace;
+    transform: rotate(-45deg);
+    border-radius: 10px;
+}
+
+/* ===================================
+	오른쪽에서 왼쪽으로 오는 애니메이션 
+===================================== */
+.animated.slide-in-left {animation: slideInLeft .75s ease both; visibility: visible;}
+
+	@keyframes slideInLeft{
+		0%{margin-left: 100%;}
+		100%{margin-left: 0%;}
+	}
+	
+/* ===================================
+	왼쪽에서 오른쪽으로 오는 애니메이션 
+===================================== */
+.animated.slide-in-right {animation: slideInRight .75s ease both;}
+
+	@keyframes slideInRight{
+		0%{margin-right: 100%; color: rgba(255,255,255,0);}
+		100%{margin-right: 47.5%; color: rgba(255,255,255,1);}
+	}
+
+/* ===================================
+			About 속성 
+===================================*/
+.about_frame {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	margin: 77px auto;
+}
+
+.selfimg {
+	margin-top: 1%;
+	margin-left: 9%;
+	margin-right: 9%;
+	float: left;
+	border-radius: 50px;
+}
+
+.profile {
+	float: left;
+	margin-top: -2%;
+	margin-left: 16%;
+	text-align: left;
+}
+
+.history {
+    float: left;
+    margin-top: 15px;
+    margin-left: 100px;
+    text-align: left;
+}
+
+#section02 .p-list {
+	margin: 2px 0;
+}
+
+/* ===================================
+			section03(skills) 
+=================================== */
+#section03 {
+	width: 100%;
+	height: 650px;
+	background: #947979;
+}
+
+/* ===================================
+			skills 속성 
+=================================== */
+.skills_frame {
+	text-align: left;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+/* ===================================
+			skills 태그 속성 
+=================================== */
+#section03 h1 {
+	font-size: 5.5rem;
+	margin-top: -15%;
+	margin-left: 0%;
+	height: 40px;
+	color: #ffffff;
+}
+
+#section03 h2 {
+	font-size: 1.5rem;
+	margin-left: 0%;
+	margin-top: 1%;
+	height: 25px;
+}
+
+#section03 h3 {
+	font-size: 1.2rem;
+	margin-left: 0%;
+}
+
+#section03 hr {
+	max-width: 7.25rem;
+	border-width: .5rem;
+	border-color: #f4623a;
+	margin-top: 3%;
+	margin-left: 47%;
+}
+
+/* ===================================
+		원형 그래프 애니메이션 속성 
+=================================== */
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.skills-area {
+	margin-top: 0%;
+}
+
+.single-skill {
+	width: 11%;
+	margin: 0 19px;
+	float: left;
+	text-align: center;
+}
+
+/* ===================================
+			막대그래프 속성 
+=================================== */ 
+.skillbar {
+	display: inline-block;
+	width: 40%;
+	margin-right: -5%;
+	margin-left: 8%;
+	margin-top: -3%;
+}
+
+.skills_graph {
+	height: 40px;
+	background: #ccc;
+	margin-bottom: 10px;
+	margin-left: 10%;
+}
+
+.skills_graph span {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	text-align: right;
+	background: green;
+	box-sizing: border-box;
+	color: #fff;
+	animation: stack 2s 1;
+}
+
+.graph.skill1 span { animation: stack 2s 1; }
+
+	@keyframes stack{
+		0%{width: 0; color: rgba(255,255,255,0);}
+		10%{color: rgba(255,255,255,1);}
+		100%{width: 75%;}
+	}
+	*/
+
+/* ===================================
+		section04(Portfolio) 
+=================================== */
+#section04 {
+	width: 100%;
+	height: 1000px;
+	background: #e3dfdf;
+}
+
+/* ===================================
+		section04 태그 속성
+=================================== */
+#section04 h1 {
+	font-size: 5.5rem;
+	margin-top: -15%;
+	margin-left: 0%;
+	height: 40px;
+	color: #777373;
+}
+
+#section04 hr {
+	max-width: 7.25rem;
+	border-width: .5rem;
+	border-color: #f4623a;
+	margin-top: 3%;
+	margin-left: 47%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.col-lg-4 {
+	position: relative;
+    width: 100%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
+.portfolio-box {
+  position: relative;
+  display: block;
+}
+
+.portfolio-box .portfolio-box-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: rgba(244, 98, 58, 0.9);
+  transition: opacity 0.25s ease;
+  text-align: center;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===================================
+		section05(Contact)
+=================================== */
+#section05 {
+	width: 100%;
+	height: 770px;
+	position: relative;
+	background: url("../images/background1.png");
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* ===================================
+		section05 태그 속성
+=================================== */
+#section05 h1 {
+	font-size: 5.5rem;
+	margin-top: -15%;
+	margin-left: 0%;
+	height: 40px;
+	color: #ffffff;
+}
+
+#section05 hr {
+	max-width: 7.25rem;
+	border-width: .5rem;
+	border-color: #f4623a;
+	margin-top: 3%;
+	margin-left: 47%;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===================================
+		section05 아이콘 속성
+=================================== */
+.phone {
+	color: white;
+	text-align: center;
+	margin-top: -2%;
+	margin-bottom: 4px;
+	font-size: 22px;
+}
+
+.email {
+	color: white;
+	text-align: center;
+	font-size: 22px;
+}
+
+/* ===================================
+			contact form
+=================================== */
+input[type="text"], input[type="email"], textarea {
+	display: block;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+    padding: 10px 15px;
+    background: #1E242C;
+    font-size: 12pt;
+    margin-bottom: 3px;
+    color: #fff;
+}
+
+form {
+	min-width: 500px;
+	margin: 40px 30% 0px 30%;
+}
+
+textarea {
+	min-height: 150px;
+	margin-bottom: 5px;
+}
+
+.button {
+	float: right;
+    margin: 5px 0 0 0;
+    font-size: 12pt;
+    border: 2px #429b82 solid;
+    border-radius: 50px;
+    padding: 10px 30px;
+    color: #ffffff;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+    transition: all .9s;
+}
+
+.button:hover {
+	color: #6ff;
+}
+
+.hover4:hover {
+	box-shadow: 200px 0 0 0 rgba(0, 0, 0, 0.25) inset, -200px 0 0 0
+		rgba(0, 0, 0, 0.25) inset;
+}
+
+/* ===================================
+				footer
+=================================== */
+#footer {
+	padding: 50px 0;
+    background-color: #262626;
+    color: #fff;
+    text-align: center;
+}
+
+#footer p {
+	margin: 5px 0;
+}
